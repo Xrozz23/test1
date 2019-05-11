@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+
+        <a href="#" class ="navbar-brand">Task App</a>
+
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="formTask">
+                            <div class="from-group">
+                                <input type="text" id="title" placeholder="Agregar una tarea" class ="form-control">
+                            </div>
+                            <div class="from-group pt-3"></div>
+                                <textarea  id="description" placeholder="Agregar una descripcion" class ="form-control" cols="80" rows="8"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                    Crear tarea
+                               </button>
+                             
+                            </form>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div id="tasks" >
+            
+                    </div>
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
